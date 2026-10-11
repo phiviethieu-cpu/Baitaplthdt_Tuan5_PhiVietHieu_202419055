@@ -4,6 +4,7 @@
 /****************/
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 // Quan hệ kết tập: thiết bị tạo ở ngoài rồi mới add vào, xóa phòng thì thiết bị vẫn còn.
@@ -36,7 +37,7 @@ public class LabRoom {
     }
 
     public List<Device> getDevices() {
-        return danhSachThietBi;
+        return Collections.unmodifiableList(danhSachThietBi);
     }
 
     public void addDevice(Device thietBi) {
