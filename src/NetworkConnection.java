@@ -1,3 +1,8 @@
+/****************/
+// Mã sinh viên: 202419055
+// Họ tên: Phí Việt Hiếu
+/****************/
+
 // Computer và NetworkPrinter khác lớp cha nên không gom lên cha được, dùng chung class này
 public class NetworkConnection {
     private String diaChiIp; // null khi chưa kết nối

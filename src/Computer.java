@@ -1,3 +1,8 @@
+/****************/
+// Mã sinh viên: 202419055
+// Họ tên: Phí Việt Hiếu
+/****************/
+
 public class Computer extends Device implements INetworkable {
     private int dungLuongRam; // GB
     private String loaiCpu;

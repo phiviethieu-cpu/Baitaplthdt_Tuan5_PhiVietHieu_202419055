@@ -1,3 +1,8 @@
+/****************/
+// Mã sinh viên: 202419055
+// Họ tên: Phí Việt Hiếu
+/****************/
+
 // Thêm laMayInMau vì đề có phụ phí 300k cho máy in màu, mà loại laser hay phun thì không biết có màu hay không.
 public class Printer extends Device {
     private PrinterType loaiMayIn;

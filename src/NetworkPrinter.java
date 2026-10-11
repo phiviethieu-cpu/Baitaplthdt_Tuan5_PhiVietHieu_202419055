@@ -1,3 +1,8 @@
+/****************/
+// Mã sinh viên: 202419055
+// Họ tên: Phí Việt Hiếu
+/****************/
+
 // Chỉ một số máy in có mạng nên em tách riêng lớp này, máy in thường vẫn dùng Printer.
 public class NetworkPrinter extends Printer implements INetworkable {
     private final NetworkConnection ketNoi = new NetworkConnection();

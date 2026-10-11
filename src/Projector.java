@@ -1,3 +1,8 @@
+/****************/
+// Mã sinh viên: 202419055
+// Họ tên: Phí Việt Hiếu
+/****************/
+
 public class Projector extends Device {
     private int doSang; // lumen
     private int soGioBongDen;
