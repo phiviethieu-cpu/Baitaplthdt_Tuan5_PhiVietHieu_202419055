@@ -40,6 +40,9 @@ public class LabRoom {
     }
 
     public void addDevice(Device thietBi) {
+        if (thietBi == null) {
+            throw new IllegalArgumentException("Thiet bi khong duoc null");
+        }
         if (findDevice(thietBi.getId()) != null) {
             throw new IllegalArgumentException("Thiet bi co ma " + thietBi.getId()
                     + " da ton tai trong phong " + maPhong);
