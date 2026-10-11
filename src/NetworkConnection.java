@@ -14,7 +14,7 @@ public class NetworkConnection {
 
     // moTaThietBi chỉ để in lỗi, vd "May tinh PC01"
     public void connect(String diaChiIp, String moTaThietBi) {
-        if (diaChiIp == null || diaChiIp.isEmpty()) {
+        if (diaChiIp == null || diaChiIp.trim().isEmpty()) {
             throw new IllegalArgumentException("IP rong");
         }
         if (dangKetNoi) {
