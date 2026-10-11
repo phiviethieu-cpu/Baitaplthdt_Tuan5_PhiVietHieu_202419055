@@ -52,5 +52,15 @@ public class Main {
         }
         dsMang.get(0).disconnect();
         System.out.println("sau khi ngat: " + dsMang.get(0).getIpAddress() + " " + dsMang.get(0).isConnected());
+
+        // cac ca dac biet
+        try { in2.connect("192.168.1.99"); } catch (Exception e) { System.out.println(e.getMessage()); }
+        try { mt1.disconnect(); mt1.connect(""); } catch (Exception e) { System.out.println(e.getMessage()); }
+        try { mt1.connect("   "); } catch (Exception e) { System.out.println(e.getMessage()); }
+        try { p1.addDevice(null); } catch (Exception e) { System.out.println(e.getMessage()); }
+        try { new Projector("PJ02", "X", 2020, 0, 3000, 0); } catch (Exception e) { System.out.println(e.getMessage()); }
+        try { new Projector("PJ03", "X", 2100, 1000, 3000, 0); } catch (Exception e) { System.out.println(e.getMessage()); }
+        System.out.println(p1.findDevice("PC01") != null);
+        System.out.println(p1.removeDevice("PC01") + " " + p1.removeDevice("XXX"));
     }
 }
