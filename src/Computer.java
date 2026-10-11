@@ -46,7 +46,7 @@ public class Computer extends Device implements INetworkable {
         if (coGpuRoi) {
             chiPhi += getPrice() * 0.02;
         }
-        if (getYearsUsed() >= 5) {
+        if (getYearsUsed() > 5) {
             chiPhi += getPrice() * 0.01;
         }
         return chiPhi;
