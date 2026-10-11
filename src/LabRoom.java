@@ -15,6 +15,9 @@ public class LabRoom {
     private List<Device> danhSachThietBi;
 
     public LabRoom(String maPhong, String tenPhong, int sucChua) {
+        if (maPhong == null || maPhong.trim().isEmpty()) {
+            throw new IllegalArgumentException("Chua nhap ma phong");
+        }
         if (sucChua <= 0) {
             throw new IllegalArgumentException("Suc chua sai");
         }

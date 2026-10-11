@@ -22,6 +22,9 @@ public class Printer extends Device {
     }
 
     public void setType(PrinterType loaiMayIn) {
+        if (loaiMayIn == null) {
+            throw new IllegalArgumentException("Chua chon loai may in");
+        }
         this.loaiMayIn = loaiMayIn;
     }
 

@@ -33,6 +33,9 @@ public class Computer extends Device implements INetworkable {
     }
 
     public void setCpuType(String loaiCpu) {
+        if (loaiCpu == null) {
+            throw new IllegalArgumentException("Chua nhap loai CPU");
+        }
         this.loaiCpu = loaiCpu;
     }
 

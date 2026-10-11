@@ -34,7 +34,7 @@ public abstract class Device {
     }
 
     public void setName(String tenThietBi) {
-        if (tenThietBi == null) {
+        if (tenThietBi == null || tenThietBi.trim().isEmpty()) {
             throw new IllegalArgumentException("Chua nhap ten");
         }
         this.tenThietBi = tenThietBi;
@@ -67,6 +67,9 @@ public abstract class Device {
     }
 
     public void setStatus(DeviceStatus trangThai) {
+        if (trangThai == null) {
+            throw new IllegalArgumentException("Trang thai null");
+        }
         this.trangThai = trangThai;
     }
 
